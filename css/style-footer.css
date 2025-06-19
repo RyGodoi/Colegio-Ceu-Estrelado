@@ -1,0 +1,78 @@
+:root {
+    --primary-color: #013F75;
+    /* A cor principal do Colégio Céu Estrelado */
+    --hover-color: #026BB6;
+    /* Cor do hover para links */
+
+}
+
+
+
+.Footer {
+    background-color: var(--primary-color);
+    border-radius: 50px 50px 0px 0px;
+    color: white;
+    padding: 20px 0 20px 0;
+}
+
+.Footer p {
+    text-align: center;
+    margin: 0;
+    border-top: 2px solid white;
+    padding-top: 20px;
+}
+
+.colunas {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.coluna h5 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.coluna ul {
+    margin: 0;
+    padding: 0;
+}
+
+.coluna ul li {
+    padding: 5px 0 5px 0;
+}
+
+.coluna ul a {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.coluna {
+    width: 30%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.coluna img {
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 1000px) {
+    .Footer {
+        text-align: center;
+    }
+
+    .colunas {
+        flex-direction: column;
+    }
+
+    .coluna {
+        width: 100%;
+    }
+}

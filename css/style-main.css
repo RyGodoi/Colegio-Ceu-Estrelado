@@ -8,77 +8,56 @@
 
 .slide-escola {
     background-image: url('../assets/Header.png');
-    /* Verifique o caminho da sua imagem */
     background-size: cover;
     background-position: center;
-    /* Centraliza a imagem de fundo */
     background-repeat: no-repeat;
     background-attachment: scroll;
-    /* Geralmente "scroll" para slides que ocupam a tela */
     width: 100%;
-    height: 500px;
-    /* Altura fixa ou ajuste para 'vh' se preferir mais flexibilidade (ex: 80vh) */
-
-    /* ------ Adições para Flexbox e alinhamento ------ */
     display: flex;
-    /* Transforma o .slide em um container flex */
-    justify-content: flex-end;
-    /* ALINHA O CONTEÚDO À DIREITA */
+    justify-content: center;
     align-items: center;
-    /* Centraliza o conteúdo verticalmente (opcional, mas bom para textos) */
-    padding-right: 20%;
-    /* Adiciona um padding à direita para o conteúdo não colar na borda */
-    padding-left: 5%;
-    /* Opcional: padding à esquerda para telas maiores */
+    padding: 5%;
+}
+
+.alinhamento-slide-escola {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding-right: 9%;
 }
 
 .conteudo-slide {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%;
-    /* Define que o conteúdo ocupa metade da largura do .slide */
-    max-width: 600px;
-    /* Opcional: Garante que o texto não fique muito largo em telas gigantes */
     text-align: right;
-    /* Alinha o texto dentro do .conteudo-slide à direita */
     color: #fff;
-    /* Se sua imagem de fundo for escura, defina a cor do texto para branco */
-    /* Removido: position: relative; right: 0; pois o flexbox fará o posicionamento */
+    width: 40%;
 }
 
 .conteudo-titulo {
     display: flex;
     justify-content: center;
-    /* Alinha o título e a imagem à direita dentro do .conteudo-slide */
     align-items: center;
     margin-bottom: 10px;
-    /* Espaço entre o título e o parágrafo */
 }
 
 .conteudo-titulo img {
     width: 60px;
-    /* Ajuste o tamanho da sua imagem de estrela */
     height: auto;
     margin-left: 10px;
-    /* Espaço entre a imagem e o título */
     display: inline-block;
-    /* Para que o flexbox trate ela como parte do texto */
 }
 
 .conteudo-titulo h1 {
     font-size: 3rem;
-    /* Tamanho do título */
     color: #fff;
-    /* Cor do título */
     margin: 0;
     text-align: center;
-    /* Remove margem padrão do h1 */
 }
 
 .slide-escola p {
     font-size: 1.1rem;
-    /* Tamanho do parágrafo */
     line-height: 1.2;
     text-align: center;
 }
@@ -94,16 +73,12 @@
 
 .btn1:hover {
     transform: scale(1.05);
-    /* Aumenta o botão em 5% (1.05 é 105%) */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     color: white;
     font-weight: 700;
-    /* Opcional: Adiciona uma sombra para dar profundidade */
-    /* background-color: #026BB6; Opcional: Mudar a cor de fundo no hover */
 }
 
 .Section01 {
-    margin-top: 40px;
     margin-bottom: 40px;
     display: flex;
     justify-content: space-between;
@@ -146,6 +121,15 @@
     padding: 10px;
 }
 
+.card-img-top {
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.card-img-top:hover {
+    transform: scale(1.05);
+}
+
 .card h3 {
     color: var(--primary-color);
     font-weight: 600;
@@ -153,8 +137,8 @@
 
 .Segmentos {
     width: 100%;
-    padding-top: 50px; /* Adicione um padding geral para a seção */
-    padding-bottom: 50px; /* Adicione um padding geral para a seção */
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .Segmentos h2 {
@@ -180,7 +164,7 @@
     align-items: center;
     border-radius: 65px;
     padding: 30px 90px 30px 30px;
-    box-sizing:border-box;
+    box-sizing: border-box;
     color: white;
 }
 
@@ -190,7 +174,7 @@
 }
 
 .img-segmentos {
-    height: 400px;
+    height: 350px;
     border-radius: 25px;
     position: relative;
     right: 80px;
@@ -198,15 +182,17 @@
     -webkit-box-shadow: 18px 21px 37px -10px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 18px 21px 37px -10px rgba(0, 0, 0, 0.75);
 }
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: var(--primary-color); /* Fundo dos ícones de navegação */
+    background-color: var(--primary-color);
 }
-.Galeria{
+
+.Galeria {
     margin-top: 80px;
     padding-top: 30px;
     padding-bottom: 40px;
-        background-image: url('../assets/Gallery.png');
+    background-image: url('../assets/Gallery.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -217,17 +203,20 @@
     flex-direction: column;
     align-items: center;
 }
-.Galeria h2 { 
+
+.Galeria h2 {
     text-align: center;
     font-weight: 700;
-    color:white;
+    color: white;
 }
-.fotos{
+
+.fotos {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items:center;
+    align-items: center;
 }
+
 .fotos img {
     width: 350px;
     border-radius: 30px;
@@ -235,47 +224,56 @@
     margin: 10px;
     transition: 0.3s ease-in-out;
 }
-.fotos img:hover{
+
+.fotos img:hover {
     transform: scale(1.05);
-    /* Aumenta o botão em 5% (1.05 é 105%) */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     cursor: pointer;
 }
 
 .lightbox-overlay {
-    /* Ocupa a tela inteira, fixo */
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.9); /* Fundo preto semi-transparente */
-    display: flex; /* Para centralizar a imagem */
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 2000; /* Garante que fique acima de tudo */
-    opacity: 0; /* Começa invisível */
-    visibility: hidden; /* Esconde completamente até ser ativado */
-    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out; /* Transição suave */
+    z-index: 2000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
 .lightbox-overlay.active {
-    opacity: 1; /* Torna visível */
-    visibility: visible; /* Torna o elemento visível */
+    opacity: 1;
+    /* Torna visível */
+    visibility: visible;
+    /* Torna o elemento visível */
 }
 
 .lightbox-image {
-    max-width: 90%; /* Limita a largura da imagem expandida */
-    max-height: 90%; /* Limita a altura da imagem expandida */
-    object-fit: contain; /* Garante que a imagem se ajuste sem cortar */
-    border-radius: 5px; /* Bordas arredondadas na imagem expandida */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra para destacar a imagem */
-    transform: scale(0.8); /* Começa menor para animar a entrada */
-    transition: transform 0.3s ease-in-out; /* Transição para o scale */
+    max-width: 90%;
+    /* Limita a largura da imagem expandida */
+    max-height: 90%;
+    /* Limita a altura da imagem expandida */
+    object-fit: contain;
+    /* Garante que a imagem se ajuste sem cortar */
+    border-radius: 5px;
+    /* Bordas arredondadas na imagem expandida */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    /* Sombra para destacar a imagem */
+    transform: scale(0.8);
+    /* Começa menor para animar a entrada */
+    transition: transform 0.3s ease-in-out;
+    /* Transição para o scale */
 }
 
 .lightbox-overlay.active .lightbox-image {
-    transform: scale(1); /* Expande para o tamanho normal quando ativo */
+    transform: scale(1);
+    /* Expande para o tamanho normal quando ativo */
 }
 
 .lightbox-close {
@@ -285,12 +283,14 @@
     color: #fff;
     font-size: 40px;
     cursor: pointer;
-    z-index: 2001; /* Acima da imagem */
+    z-index: 2001;
+    /* Acima da imagem */
     transition: color 0.2s ease-in-out;
 }
 
 .lightbox-close:hover {
-    color: #ccc; /* Cor ao passar o mouse */
+    color: #ccc;
+    /* Cor ao passar o mouse */
 }
 
 /* Opcional: Adicione esta classe ao body quando o lightbox estiver aberto
@@ -300,19 +300,25 @@ body.no-scroll {
 }
 
 .Formulario {
-    background-color: #f8f8f8; /* Uma cor de fundo suave para destacar a seção */
-    padding: 80px 20px; /* Padding superior e inferior para espaço */
-    text-align: center; /* Centraliza o texto e o formulário */
+    background-color: #f8f8f8;
+    /* Uma cor de fundo suave para destacar a seção */
+    padding: 80px 20px;
+    /* Padding superior e inferior para espaço */
+    text-align: center;
+    /* Centraliza o texto e o formulário */
 }
 
 .Formulario .container {
-    max-width: 800px; /* Limita a largura do conteúdo para melhor leitura */
-    margin: 0 auto; /* Centraliza o container */
+    max-width: 800px;
+    /* Limita a largura do conteúdo para melhor leitura */
+    margin: 0 auto;
+    /* Centraliza o container */
 }
 
 .Formulario h2 {
     font-size: 2.5rem;
-    color: var(--primary-color); /* Usando sua cor primária */
+    color: var(--primary-color);
+    /* Usando sua cor primária */
     margin-bottom: 20px;
     font-weight: 700;
 }
@@ -320,15 +326,18 @@ body.no-scroll {
 .Formulario p {
     font-size: 1.1rem;
     color: #555;
-    margin-bottom: 40px; /* Espaço maior antes do formulário */
+    margin-bottom: 40px;
+    /* Espaço maior antes do formulário */
     line-height: 1.6;
 }
 
 .contato-form {
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Espaço entre os grupos de formulário */
-    text-align: left; /* Alinha os labels e inputs à esquerda dentro do formulário */
+    gap: 15px;
+    /* Espaço entre os grupos de formulário */
+    text-align: left;
+    /* Alinha os labels e inputs à esquerda dentro do formulário */
 }
 
 .contato-form .form-group {
@@ -336,7 +345,8 @@ body.no-scroll {
 }
 
 .contato-form label {
-    display: block; /* Faz o label ocupar sua própria linha */
+    display: block;
+    /* Faz o label ocupar sua própria linha */
     font-weight: 600;
     margin-bottom: 5px;
     color: #333;
@@ -344,77 +354,38 @@ body.no-scroll {
 
 .contato-form input[type="text"],
 .contato-form input[type="email"],
-.contato-form input[type="tel"],
 .contato-form textarea {
     width: 100%;
     padding: 12px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--primary-color);
     border-radius: 8px;
     font-size: 1rem;
-    box-sizing: border-box; /* Garante que padding e border não aumentem a largura */
+    box-sizing: border-box;
+    /* Garante que padding e border não aumentem a largura */
 }
 
 .contato-form input[type="text"]:focus,
 .contato-form input[type="email"]:focus,
-.contato-form input[type="tel"]:focus,
 .contato-form textarea:focus {
-    border-color: var(--primary-color); /* Borda fica colorida ao focar */
-    outline: none; /* Remove o outline padrão do navegador */
-    box-shadow: 0 0 5px rgba(var(--primary-color-rgb), 0.3); /* Sombra suave */
+    border-color: var(--primary-color);
+    /* Borda fica colorida ao focar */
+    outline: none;
+    /* Remove o outline padrão do navegador */
+    box-shadow: 0 0 5px rgba(var(--primary-color-rgb), 0.3);
+    /* Sombra suave */
 }
 
 .contato-form textarea {
-    resize: vertical; /* Permite redimensionar apenas verticalmente */
+    resize: vertical;
+    /* Permite redimensionar apenas verticalmente */
 }
-
-.contato-form .btn-principal {
-    align-self: center; /* Centraliza o botão no formulário */
-    margin-top: 20px; /* Espaço acima do botão */
-    padding: 15px 30px; /* Aumenta o padding do botão */
-    font-size: 1.1rem;
-    /* Outros estilos do .btn-principal já definidos */
-}
-.Footer{
-    background-color:var(--primary-color);
-    border-radius: 50px  50px 0px 0px;   
-    color: white;
-    text-align: center;
-
-}
-.colunas{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    padding: 30px;
-}
-.coluna h5{
-    font-size: 1.2rem;
-    font-weight: 700;
-}
-.coluna ul a{
-    font-size: 1rem;
-    font-weight: 400;
-}
-.coluna{
-    width: 30%;
-}
-.coluna img {
-    width: 60%;
-}
-
-
 
 /* --- Media Queries para responsividade --- */
 @media (max-width: 1000px) {
     .slide-escola {
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
             url('../assets/Header.png');
-        height: 400px;
-        /* Reduz a altura do slide em telas menores */
-        padding-right: 15px;
-        /* Ajuste o padding */
-        padding-left: 15px;
+        padding: 50px 5px 50px 5px;
     }
 
     .conteudo-slide {
@@ -460,15 +431,13 @@ body.no-scroll {
     .img-segmentos {
         width: 80%;
         height: auto;
-    position:relative;
-    right: 0px;
-    top: 150px;
+        position: relative;
+        right: 0px;
+        top: 150px;
     }
-    .colunas{
-        flex-direction: column;
-    }
-    .coluna{
-        width: 100%;
+
+    .alinhamento-slide-escola {
+        padding-right: 0;
     }
 }
 
@@ -514,11 +483,14 @@ body.no-scroll {
         margin-top: 20px;
         width: 80%;
     }
-    .caixa-texto {border-radius:20px;
+
+    .caixa-texto {
+        border-radius: 20px;
     }
+
     .fotos img {
-    width: 80%;
-}
+        width: 80%;
+    }
 }
 
 @media (max-width: 570px) {

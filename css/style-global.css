@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /* Define a fonte Poppins para todo o corpo do documento */
 body {
     font-family: 'Poppins', sans-serif;
@@ -37,4 +38,9 @@ textarea,
 select {
     font-family: 'Poppins', sans-serif;
     font-size: inherit;
+}
+
+/* O estado inicial: invisível antes da animação */
+.oculto {
+    visibility: hidden;
 }
