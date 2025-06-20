@@ -15,8 +15,8 @@ $(document).ready(function () {
 
 
     // --- Funcionalidade da mini Galeria de imagens ---
-    // Abrir o lightbox ao clicar em qualquer imagem com a classe 'gallery-item'
-    $('.gallery-item').on('click', function () {
+    // Abrir o lightbox ao clicar em qualquer imagem com a classe 'img-galeria'
+    $('.img-galeria').on('click', function () {
         var imageUrl = $(this).attr('src'); // Pega o src da imagem clicada
         $('#lightbox-image').attr('src', imageUrl); // Define o src da imagem no lightbox
         $('#lightbox').addClass('active'); // Ativa o overlay do lightbox
@@ -37,50 +37,54 @@ $(document).ready(function () {
 
 
 
-    //---Envio de Formulario com Framworks de terceiros Formspree
-    // ---Parte do formulário ---
+    // --- Envio de Formulario com Frameworks de terceiros Formspree ---
     $('.contato-form').submit(function (event) {
-        event.preventDefault(); // Impede o envio padrão do formulário (o redirecionamento)
+        event.preventDefault();
 
         const $form = $(this);
-        const url = $form.attr('action'); // Pega a URL do action do formulário
-        const formData = $form.serialize(); // Pega todos os dados do formulário
+        const url = $form.attr('action');
+        const formData = $form.serialize();
 
-        // Opcional: Desabilita o botão de enviar enquanto envia para evitar múltiplos cliques
         const $submitBtn = $form.find('button[type="submit"]');
+        const $successAlert = $('#successAlert'); // Seleciona o alerta de sucesso
+        const $errorAlert = $('#errorAlert');   // Seleciona o alerta de erro
+
+        // Oculta quaisquer alertas visíveis antes de enviar
+        $successAlert.addClass('d-none');
+        $errorAlert.addClass('d-none');
+
+        // Desabilita o botão e muda o texto
         $submitBtn.prop('disabled', true).text('Enviando...');
 
         $.ajax({
             type: 'POST',
             url: url,
             data: formData,
-            dataType: 'json', // O Formspree pode retornar JSON para requests AJAX
+            dataType: 'json',
             success: function (response) {
-                // Manipula a resposta de sucesso
-                // console.log(response); // Para depuração
+                // Oculta o alerta de erro caso estivesse visível e exibe o de sucesso
+                $errorAlert.addClass('d-none');
+                $successAlert.removeClass('d-none'); // Torna o alerta de sucesso visível
 
                 $form.trigger('reset'); // Limpa os campos do formulário
-                $submitBtn.prop('disabled', false).text('Mensagem Enviada!'); // Reabilita o botão
+                $submitBtn.prop('disabled', false).text('Enviar Mensagem'); // Reabilita o botão
 
-                // Exibe uma mensagem de sucesso (você precisaria de um elemento no HTML para isso)
-                // Por exemplo, adicione <div id="form-messages"></div> no seu HTML
-                // E depois: $('#form-messages').text('Sua mensagem foi enviada com sucesso!').css('color', 'green').fadeIn();
-                alert('Sua mensagem foi enviada com sucesso!');
-
-                // Opcional: Some com a mensagem de sucesso depois de alguns segundos
-                // setTimeout(function() {
-                //     $('#form-messages').fadeOut();
-                // }, 5000);
+                // Faz o alerta de sucesso desaparecer após 5 segundos
+                setTimeout(function () {
+                    $successAlert.addClass('d-none');
+                }, 5000);
             },
             error: function (xhr, status, error) {
-                // Manipula erros
-                // console.error(xhr.responseText); // Para depuração
+                // Oculta o alerta de sucesso caso estivesse visível e exibe o de erro
+                $successAlert.addClass('d-none');
+                $errorAlert.removeClass('d-none'); // Torna o alerta de erro visível
 
                 $submitBtn.prop('disabled', false).text('Enviar Mensagem'); // Reabilita o botão
 
-                // Exibe uma mensagem de erro
-                // $('#form-messages').text('Ocorreu um erro ao enviar sua mensagem. Tente novamente.').css('color', 'red').fadeIn();
-                alert('Ocorreu um erro ao enviar sua mensagem. Tente novamente.');
+                // Faz o alerta de erro desaparecer após 5 segundos
+                setTimeout(function () {
+                    $errorAlert.addClass('d-none');
+                }, 5000);
             }
         });
     });

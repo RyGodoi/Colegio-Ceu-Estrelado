@@ -4,148 +4,74 @@
     --hover-color: #026BB6;
     /* Cor do hover para links */
     --button-color: #F58C05;
+    --secundary-color: #f6f6f6;
+}
+
+.cor-primaria {
+    color: var(--primary-color);
+    text-align: inherit;
 }
 
 .slide-escola {
-    background-image: url('../assets/Header.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)),
+        url('../assets/Header.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5%;
 }
 
-.alinhamento-slide-escola {
-    width: 100%;
-    display: flex;
-    justify-content: end;
-    padding-right: 9%;
-}
-
-.conteudo-slide {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: right;
-    color: #fff;
-    width: 40%;
-}
-
-.conteudo-titulo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.conteudo-titulo img {
-    width: 60px;
-    height: auto;
-    margin-left: 10px;
-    display: inline-block;
-}
-
-.conteudo-titulo h1 {
-    font-size: 3rem;
-    color: #fff;
-    margin: 0;
-    text-align: center;
-}
-
-.slide-escola p {
-    font-size: 1.1rem;
-    line-height: 1.2;
-    text-align: center;
-}
-
-.btn1 {
+.btn-principal {
     background-color: var(--button-color);
-    padding: 5px 20px;
-    border-radius: 10px;
-    margin-top: 10px;
-    transition: 0.3s ease-in-out;
     color: white;
+    font-weight: bold;
 }
 
-.btn1:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    color: white;
-    font-weight: 700;
-}
-
-.Section01 {
-    margin-bottom: 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.conteudo-section01 {
-    width: 55%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: c;
-}
-
-.conteudo-section01 h2 {
-    text-align: center;
-    color: var(--primary-color);
-    font-weight: 700;
-    font-size: 2rem;
-}
-
-.conteudo-section01 p {
+.texto-preenchendo {
     text-align: justify;
 }
 
-.img-section01 {
-    width: 35%;
-}
-
-.cards-qualidades {
-    margin-top: 20px;
-    margin-bottom: 20px;
+.caixa-textoo {
+    width: 50%;
+    background-color: var(--primary-color);
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 65px;
+    padding: 30px 90px 30px 30px;
+    box-sizing: border-box;
+    color: white;
 }
 
-.card {
-    border: none;
-    text-align: center;
-    padding: 10px;
+.bg-primario {
+    background-color: var(--primary-color);
 }
 
-.card-img-top {
-    transition: 0.3s ease-in-out;
-    cursor: pointer;
+.bg-secundario {
+    background-color: var(--secundary-color);
 }
 
-.card-img-top:hover {
-    transform: scale(1.05);
+.p-segmentos {
+    padding: 3rem 6rem 3rem 2rem;
+    border-radius: 65px;
 }
 
-.card h3 {
-    color: var(--primary-color);
-    font-weight: 600;
+.img-segmentos {
+    width: 350px;
+    border-radius: 25px;
+    position: relative;
+    right: 80px;
+    box-shadow: 18px 21px 37px -10px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 18px 21px 37px -10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 18px 21px 37px -10px rgba(0, 0, 0, 0.75);
 }
+
 
 .Segmentos {
     width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
-}
-
-.Segmentos h2 {
-    text-align: center;
-    color: var(--primary-color);
-    font-weight: 700;
-    font-size: 2.5rem;
 }
 
 .box-slide-carrousel {
@@ -183,52 +109,29 @@
     -moz-box-shadow: 18px 21px 37px -10px rgba(0, 0, 0, 0.75);
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: var(--primary-color);
-}
-
-.Galeria {
-    margin-top: 80px;
-    padding-top: 30px;
-    padding-bottom: 40px;
+.galeria {
     background-image: url('../assets/Gallery.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
 }
 
-.Galeria h2 {
-    text-align: center;
-    font-weight: 700;
-    color: white;
-}
-
-.fotos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.fotos img {
-    width: 350px;
+.img-galeria {
     border-radius: 30px;
-    border: 10px solid white;
-    margin: 10px;
-    transition: 0.3s ease-in-out;
 }
 
-.fotos img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+.footer {
+    background-color: var(--primary-color);
+}
+
+.anim {
+    transition: 0.3s ease-in-out;
     cursor: pointer;
+}
+
+.anim:hover {
+    transform: scale(1.05);
 }
 
 .lightbox-overlay {
@@ -256,17 +159,11 @@
 
 .lightbox-image {
     max-width: 90%;
-    /* Limita a largura da imagem expandida */
     max-height: 90%;
-    /* Limita a altura da imagem expandida */
     object-fit: contain;
-    /* Garante que a imagem se ajuste sem cortar */
     border-radius: 5px;
-    /* Bordas arredondadas na imagem expandida */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    /* Sombra para destacar a imagem */
     transform: scale(0.8);
-    /* Começa menor para animar a entrada */
     transition: transform 0.3s ease-in-out;
     /* Transição para o scale */
 }
@@ -293,130 +190,25 @@
     /* Cor ao passar o mouse */
 }
 
-/* Opcional: Adicione esta classe ao body quando o lightbox estiver aberto
-   para desativar o scroll da página principal */
 body.no-scroll {
     overflow: hidden;
 }
 
-.Formulario {
-    background-color: #f8f8f8;
-    /* Uma cor de fundo suave para destacar a seção */
-    padding: 80px 20px;
-    /* Padding superior e inferior para espaço */
-    text-align: center;
-    /* Centraliza o texto e o formulário */
-}
-
-.Formulario .container {
-    max-width: 800px;
-    /* Limita a largura do conteúdo para melhor leitura */
-    margin: 0 auto;
-    /* Centraliza o container */
-}
-
-.Formulario h2 {
-    font-size: 2.5rem;
-    color: var(--primary-color);
-    /* Usando sua cor primária */
-    margin-bottom: 20px;
-    font-weight: 700;
-}
-
-.Formulario p {
-    font-size: 1.1rem;
-    color: #555;
-    margin-bottom: 40px;
-    /* Espaço maior antes do formulário */
-    line-height: 1.6;
-}
-
-.contato-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    /* Espaço entre os grupos de formulário */
-    text-align: left;
-    /* Alinha os labels e inputs à esquerda dentro do formulário */
-}
-
-.contato-form .form-group {
-    margin-bottom: 10px;
-}
-
-.contato-form label {
-    display: block;
-    /* Faz o label ocupar sua própria linha */
-    font-weight: 600;
-    margin-bottom: 5px;
-    color: #333;
-}
-
-.contato-form input[type="text"],
-.contato-form input[type="email"],
-.contato-form textarea {
+#feedbackMessages {
     width: 100%;
-    padding: 12px;
-    border: 1px solid var(--primary-color);
-    border-radius: 8px;
-    font-size: 1rem;
+    /* Garante que ocupe a largura total */
     box-sizing: border-box;
-    /* Garante que padding e border não aumentem a largura */
+    /* Inclui padding e borda na largura total */
 }
 
-.contato-form input[type="text"]:focus,
-.contato-form input[type="email"]:focus,
-.contato-form textarea:focus {
-    border-color: var(--primary-color);
-    /* Borda fica colorida ao focar */
-    outline: none;
-    /* Remove o outline padrão do navegador */
-    box-shadow: 0 0 5px rgba(var(--primary-color-rgb), 0.3);
-    /* Sombra suave */
-}
-
-.contato-form textarea {
-    resize: vertical;
-    /* Permite redimensionar apenas verticalmente */
-}
-
-/* --- Media Queries para responsividade --- */
-@media (max-width: 1000px) {
-    .slide-escola {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-            url('../assets/Header.png');
-        padding: 50px 5px 50px 5px;
-    }
-
-    .conteudo-slide {
-        width: 65%;
-        /* Ocupa mais espaço em telas de tablet */
-        max-width: none;
-        /* Remove o max-width para ser mais flexível */
-    }
-
-    .conteudo-titulo h1 {
-        font-size: 2rem;
-        /* Reduz o tamanho do título */
-    }
-
-    .slide p {
-        font-size: 1rem;
-        /* Reduz o tamanho do parágrafo */
-    }
-
-    .cards-qualidades {
-        flex-wrap: wrap;
-        width: 100%;
-        justify-content: center;
-    }
+@media (max-width: 991px) {
 
     .box-slide-carrousel {
         flex-direction: column-reverse;
     }
 
     .caixa-texto {
-        width: 100%;
+        width: 90%;
         background-color: var(--primary-color);
         display: flex;
         flex-direction: column;
@@ -435,77 +227,11 @@ body.no-scroll {
         right: 0px;
         top: 150px;
     }
-
-    .alinhamento-slide-escola {
-        padding-right: 0;
-    }
 }
 
-@media (max-width: 750px) {
-    .slide-escola {
-        height: 400px;
-        /* Talvez centralizar o texto em mobile para melhor leitura */
-        justify-content: center;
-        /* Centraliza horizontalmente em mobile */
-        text-align: center;
-        /* Alinha texto ao centro */
-    }
-
-    .conteudo-slide {
-        width: 90%;
-        /* Ocupa quase toda a largura em mobile */
-    }
-
-    .conteudo-titulo {
-        justify-content: center;
-        /* Centraliza o título e imagem da estrela */
-    }
-
-    .conteudo-titulo img {
-        margin-left: 5px;
-        /* Ajusta espaçamento em mobile */
-    }
-
-    .conteudo-titulo h1 {
-        font-size: 1.8rem;
-    }
-
-    .Section01 {
-        width: 100%;
-        flex-direction: column;
-    }
-
-    .conteudo-section01 {
-        width: 80%;
-    }
-
-    .img-section01 {
-        margin-top: 20px;
-        width: 80%;
-    }
-
-    .caixa-texto {
-        border-radius: 20px;
-    }
-
-    .fotos img {
-        width: 80%;
-    }
-}
-
-@media (max-width: 570px) {
+@media (max-width: 768px) {
     .slide-escola {
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
             url('../assets/Header-mobile.png');
-        height: 400px;
-        /* Ajuste para telas de smartphone */
-    }
-
-    .conteudo-titulo h1 {
-        font-size: 1.5rem;
-    }
-
-    .slide-escola p {
-        font-size: 0.9rem;
     }
 }

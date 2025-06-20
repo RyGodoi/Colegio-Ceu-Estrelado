@@ -1,0 +1,13 @@
+.slide-sobrenos {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)),
+        url('../assets/header-sobrenos.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 500px;
+}
+
+.text-justify {
+    text-align: justify;
+}

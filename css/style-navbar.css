@@ -2,15 +2,10 @@
     --primary-color: #013F75;
     /* A cor principal do Colégio Céu Estrelado */
     --hover-color: #026BB6;
-    /* Cor do hover para links */
     --text-light-color: #fff;
-    /* Cor clara para texto em fundos escuros */
     --active-link-bg: rgba(1, 63, 117, 0.1);
-    /* Fundo suave para link ativo */
     --active-link-border: 2px solid var(--primary-color);
-    /* Linha para link ativo */
     --mobile-hover-color: #ffd700;
-    /* Cor de hover para links mobile */
 }
 
 /* --- Estilos da Navbar Desktop --- */
@@ -92,22 +87,16 @@ body.no-scroll {
     position: fixed;
     top: 0;
     right: -100%;
-    /* Começa fora da tela, à direita */
     width: 50%;
-    /* Ocupa metade da tela */
     height: 100%;
     background-color: var(--primary-color);
     box-shadow: -4px 0 10px rgba(0, 0, 0, 0.3);
-    /* Sombra mais pronunciada */
     z-index: 1050;
-    /* Acima de tudo */
     transition: right 0.4s ease-in-out;
-    /* Animação de slide */
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 80px;
-    /* Espaço para o botão de fechar */
 }
 
 .mobile-nav-sidebar.open {
