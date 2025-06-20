@@ -40,7 +40,11 @@ select {
     font-size: inherit;
 }
 
-/* O estado inicial: invisível antes da animação */
-.oculto {
-    visibility: hidden;
+section,
+footer {
+    overflow-x: hidden;
+}
+
+iframe {
+    border-radius: 20px;
 }

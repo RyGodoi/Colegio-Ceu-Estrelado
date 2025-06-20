@@ -119,9 +119,6 @@ $(document).ready(function () {
                 // 'animate__' + tipoAnimacao é a classe específica da animação (ex: animate__fadeInUp)
                 $elemento.addClass('animate__animated animate__' + tipoAnimacao);
 
-                // Opcional: Você pode adicionar uma classe para controlar a duração da animação (ex: animate__slow)
-                // $elemento.addClass('animate__animated animate__' + tipoAnimacao + ' animate__slow');
-
                 // Pare de observar este elemento para que a animação não se repita
                 observer.unobserve(entry.target);
             }
@@ -134,5 +131,21 @@ $(document).ready(function () {
     // Começar a observar cada elemento
     elementosParaAnimar.each(function () {
         observer.observe(this);
+    });
+
+
+
+    const $carouselElement = $('#carouselExampleIndicators');
+    const $segmentButtons = $('.btn-segmento');
+
+
+    // Adiciona um listener para o evento 'slid.bs.carousel' (disparado após a mudança do slide)
+    $carouselElement.on('slid.bs.carousel', function (event) {
+        // Remove a classe 'active' de todos os botões de segmento
+        $segmentButtons.removeClass('active');
+
+        // Adiciona a classe 'active' ao botão correspondente ao slide atual
+        const currentSlideIndex = $(event.relatedTarget).index(); // Pega o índice do slide recém-ativado
+        $segmentButtons.eq(currentSlideIndex).addClass('active');
     });
 });

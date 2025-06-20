@@ -3,12 +3,25 @@
     /* A cor principal do Colégio Céu Estrelado */
     --hover-color: #026BB6;
     /* Cor do hover para links */
-    --button-color: #F58C05;
-    --secundary-color: #f6f6f6;
+    --secundary-color: #F58C05;
+    --secundary-background-color: #f6f6f6;
+}
+
+.oculto {
+    visibility: hidden;
+}
+
+.text-justify {
+    text-align: justify;
 }
 
 .cor-primaria {
     color: var(--primary-color);
+    text-align: inherit;
+}
+
+.cor-secundaria {
+    color: var(--secundary-color);
     text-align: inherit;
 }
 
@@ -22,7 +35,7 @@
 }
 
 .btn-principal {
-    background-color: var(--button-color);
+    background-color: var(--secundary-color);
     color: white;
     font-weight: bold;
 }
@@ -31,25 +44,12 @@
     text-align: justify;
 }
 
-.caixa-textoo {
-    width: 50%;
-    background-color: var(--primary-color);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 65px;
-    padding: 30px 90px 30px 30px;
-    box-sizing: border-box;
-    color: white;
-}
-
 .bg-primario {
     background-color: var(--primary-color);
 }
 
 .bg-secundario {
-    background-color: var(--secundary-color);
+    background-color: var(--secundary-background-color);
 }
 
 .p-segmentos {

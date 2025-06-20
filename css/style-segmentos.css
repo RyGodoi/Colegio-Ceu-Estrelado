@@ -1,0 +1,37 @@
+.segmentos {
+    background-image:
+        url('../assets/header-segmentos.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+
+.btn-segmento {
+    background-color: var(--cor-principal);
+    color: white;
+    border: 1px solid var(--cor-principal);
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    opacity: 1;
+}
+
+.btn-segmento.active {
+    opacity: 0.7;
+}
+
+.btn-segmento:hover:not(.active) {
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .segmentos {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url('../assets/header-segmentos-mobile.png');
+    }
+
+    .accordion-body {
+        text-align: justify;
+    }
+}

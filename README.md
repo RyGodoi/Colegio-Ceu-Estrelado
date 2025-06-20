@@ -1,64 +1,87 @@
-Este projeto consiste no desenvolvimento do novo website institucional para o Colégio Céu Estrelado. O objetivo principal é impulsionar a captação de novos alunos e otimizar a comunicação com as famílias já inseridas na comunidade escolar. O site foi concebido para ser uma plataforma moderna, totalmente responsiva e com navegação intuitiva, garantindo uma experiência agradável e eficaz para todos os visitantes.
+# 🐇 Projeto Website Institucional - Colégio Céu Estrelado (Processo Seletivo Grupo Rabbit)
 
-O portal visa posicionar o Colégio Céu Estrelado como uma instituição de ensino inovadora e acolhedora, aumentando sua visibilidade online e facilitando o acesso a informações essenciais sobre a Educação Infantil, Ensino Fundamental I e II.
+Este projeto foi desenvolvido como parte do **processo seletivo do Grupo Rabbit**, com o objetivo de demonstrar minhas habilidades na criação de websites institucionais completos.
 
-🎯 Objetivos Específicos
-Aumentar o número de matrículas anuais através de leads qualificados gerados pelo site.
-Centralizar informações essenciais para pais e responsáveis, reduzindo a demanda por atendimentos telefônicos sobre dúvidas básicas.
-Fortalecer a marca "Colégio Céu Estrelado" como referência em educação de qualidade e acolhimento.
-Garantir uma experiência de usuário fluida e acessível em qualquer dispositivo (desktop, tablet, mobile).
-✨ Funcionalidades Principais (versão atual)
-Página Inicial Atraente: Destaque para a metodologia, diferenciais e segmentos de ensino.
-Seções Informativas: Sobre Nós, Segmentos (Educação Infantil, Fundamental I, Fundamental II), Blog.
-Galeria de Fotos: Ambiente visual para apresentar as instalações e atividades da escola.
-Formulário de Contato: Facilita a comunicação para dúvidas, matrículas e informações gerais.
-Navegação Responsiva: Menu mobile (hambúrguer) para dispositivos menores.
-Otimização SEO: Implementação de técnicas para melhor ranqueamento nos motores de busca (títulos, meta descrições, alt texts, estrutura semântica).
-🚀 Tecnologias Utilizadas
-HTML5: Estrutura semântica da página.
-CSS3: Estilização e responsividade (com frameworks).
-JavaScript (jQuery): Interatividade, validação de formulário (front-end) e funcionalidades como lightbox e menu mobile.
-Bootstrap 5: Framework CSS para componentes e sistema de grid responsivo.
-Font Awesome: Biblioteca de ícones.
-Google Fonts: Tipografia.
-📁 Estrutura de Pastas
-.
-├── assets/                  # Imagens, logos, ícones, favicon
-│   ├── cards01.png
-│   ├── estrela.png
-│   ├── Gallery01.png
-│   ├── logo.png
-│   ├── logo02.png
-│   ├── section01.png
-│   └── segmentos01.png
-├── css/
-│   ├── bootstrap.min.css    # CSS do Bootstrap
-│   ├── style-global.css     # Estilos globais personalizados
-│   ├── style-main.css       # Estilos específicos da área principal
-│   └── style-navbar.css     # Estilos da barra de navegação
-├── js/
-│   ├── bootstrap.min.js     # JavaScript do Bootstrap
-│   ├── jquery.min.js        # Biblioteca jQuery
-│   └── script.js            # Scripts personalizados do projeto
-├── index.html               # Página principal do site (Home)
-└── README.md                # Este arquivo
-└── processa_formulario.php  # Exemplo de script de backend (se aplicável)
-🛠️ Como Executar o Projeto Localmente
-Clone o repositório:
-Bash
+Para isso, criei uma escola fictícia chamada **Colégio Céu Estrelado**, idealizando desde seu conceito pedagógico até sua identidade visual e estrutura digital. O foco principal do projeto é **a captação de novos alunos** e a **comunicação eficiente com pais e responsáveis**, utilizando práticas modernas de design e desenvolvimento web.
+
+---
+
+## 🧠 Contexto do Desafio
+
+A proposta exigia o desenvolvimento de um website totalmente funcional, moderno, responsivo e otimizado, simulando um projeto real de uma instituição de ensino.  
+
+O resultado foi um portal que une identidade visual acolhedora, conteúdo informativo bem estruturado e navegação intuitiva — refletindo os valores de uma escola comprometida com a qualidade e o futuro dos seus alunos.
+
+---
+
+## 🎯 Objetivos do Projeto
+
+- 📈 Demonstrar domínio técnico em HTML, CSS, JavaScript e frameworks modernos.
+- 🏫 Criar a identidade e estrutura completa de uma escola fictícia.
+- 📱 Desenvolver um site responsivo, funcional e com foco em usabilidade.
+- 🔍 Aplicar boas práticas de SEO e acessibilidade.
+- 📊 Simular um ambiente real de apresentação institucional para captação de alunos.
+
+---
+
+## ✨ Funcionalidades Principais
+
+- **Página Inicial Atraente**  
+  Apresentação da proposta pedagógica, valores e diferenciais da escola.
+
+- **Seções Informativas**  
+  Páginas como *Sobre Nós*, *Educação Infantil*, *Ensino Fundamental I e II* e *Blog*.
+
+- **Galeria de Fotos**  
+  Exibição de ambientes e atividades escolares.
+
+- **Formulário de Contato**  
+  Canal direto para dúvidas e intenção de matrícula.
+
+- **Menu Responsivo (Mobile First)**  
+  Interface adaptada para dispositivos móveis com menu hambúrguer.
+
+- **SEO e Estrutura Semântica**  
+  Títulos bem definidos, meta tags e uso adequado de `alt` e `aria`.
+
+---
+
+## 🚀 Tecnologias Utilizadas
+
+- **HTML5** — Estrutura semântica da página.  
+- **CSS3** — Estilização com foco em responsividade e acessibilidade.  
+- **JavaScript (jQuery)** — Interatividade, animações e lógica de formulários.  
+- **Bootstrap 5** — Framework CSS para grid e componentes reutilizáveis.  
+- **Font Awesome** — Biblioteca de ícones para reforçar a identidade visual.  
+- **Google Fonts** — Tipografia personalizada.
+
+---
+
+## 🛠️ Como Executar o Projeto Localmente
+
+1. Clone o repositório:
+```bash
+git clone https://github.com/RyanGodoi/colegio-ceu-estrelado.git
+Acesse a pasta do projeto:
+
+bash
+Copiar
+Editar
+cd colegio-ceu-estrelado
+Abra o arquivo index.html em seu navegador preferido
+ou utilize o Live Server no VSCode para visualização em tempo real.
 
 🤝 Contribuição
-Contribuições são bem-vindas! Se você tiver sugestões, melhorias ou encontrar algum bug, sinta-se à vontade para:
+Como o projeto foi criado exclusivamente para fins de processo seletivo, ele não está aberto para contribuições externas. No entanto, feedbacks são sempre bem-vindos!
 
-Fazer um fork do projeto.
-Criar uma branch para sua funcionalidade (git checkout -b feature/minha-funcionalidade).
-Fazer seus commits (git commit -m 'feat: Adiciona nova funcionalidade X').
-Fazer o push para a branch (git push origin feature/minha-funcionalidade).
-Abrir um Pull Request.
 📄 Licença
-Este projeto está licenciado sob a Licença MIT. Consulte o arquivo LICENSE para mais detalhes. ## 👤 Desenvolvedor
+Este projeto está licenciado sob a Licença MIT. Consulte o arquivo LICENSE para mais detalhes.
 
+👤 Desenvolvedor
 Ryan Godoi
 
-GitHub: https://github.com/RyanGodoi * LinkedIn: https://www.linkedin.com/in/ryangodoi * Portfolio: https://www.ryangodoi.dev ---
-Feito com ❤️ por Ryan Godoi.
+GitHub: github.com/RyanGodoi
+
+LinkedIn: linkedin.com/in/ryangodoi
+
+Portfólio: ryangodoi.dev
