@@ -36,8 +36,10 @@
 
 .btn-principal {
     background-color: var(--secundary-color);
-    color: white;
+    color: black;
     font-weight: bold;
+    border: 3px solid white;
+    border-radius: 10px;
 }
 
 .texto-preenchendo {

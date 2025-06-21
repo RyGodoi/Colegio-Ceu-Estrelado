@@ -36,7 +36,6 @@ $(document).ready(function () {
     });
 
 
-
     // --- Envio de Formulario com Frameworks de terceiros Formspree ---
     $('.contato-form').submit(function (event) {
         event.preventDefault();
