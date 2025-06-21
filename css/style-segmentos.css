@@ -1,6 +1,6 @@
 .segmentos {
     background-image:
-        url('../assets/header-segmentos.png');
+        url('../assets/header-segmentos.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -28,7 +28,7 @@
 @media (max-width: 768px) {
     .segmentos {
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-            url('../assets/header-segmentos-mobile.png');
+            url('../assets/header-segmentos-mobile.webp');
     }
 
     .accordion-body {

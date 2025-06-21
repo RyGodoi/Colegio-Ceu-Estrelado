@@ -27,7 +27,7 @@
 
 .slide-escola {
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)),
-        url('../assets/Header.png');
+        url('../assets/Header.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -110,7 +110,7 @@
 }
 
 .galeria {
-    background-image: url('../assets/Gallery.png');
+    background-image: url('../assets/Gallery.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -232,6 +232,6 @@ body.no-scroll {
 @media (max-width: 768px) {
     .slide-escola {
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-            url('../assets/Header-mobile.png');
+            url('../assets/Header-mobile.webp');
     }
 }

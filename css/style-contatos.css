@@ -9,7 +9,7 @@
 
 .slide-contatos {
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)),
-        url('../assets/Header-contatos.png');
+        url('../assets/Header-contatos.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
